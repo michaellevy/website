@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  test writing · SfD
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Michael Levy">
+<meta name="description" content="
+  H1
+  
+    
+    Link to heading
+  
+
+here’s a test page. let’s try an image:
+
+
+el
+
+that previewed!
+a list:
+
+a
+b
+c
+
+
+  Some code?
+  
+    
+    Link to heading
+  
+
+library(tidyverse)
+## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+
+d &lt;- tibble(x = rnorm(100))
+d$x[1:2]
+## [1]  0.3541594 -0.1892458
+
+gt::gt(head(d))
+
+
+
+  
+    
+      x
+    
+  
+  
+    0.3541594
+    -0.1892458
+    -0.1686892
+    -1.8129851
+    -0.5777714
+    1.3835001
+  
+  &#10;  
+
+
+p &lt;- 
+	d %&gt;% 
+	ggplot(aes(x)) &#43; 
+	geom_density()
+print(p)
+">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:4321/writings/2024-11-13-test-writing/lumi-feature.jpg">
+  <meta name="twitter:title" content="test writing">
+  <meta name="twitter:description" content="H1 Link to heading here’s a test page. let’s try an image:
+el that previewed!
+a list:
+a b c Some code? Link to heading library(tidyverse) ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ── ## ✔ dplyr 1.1.4 ✔ readr 2.1.5 ## ✔ forcats 1.0.0 ✔ stringr 1.5.1 ## ✔ ggplot2 3.5.1 ✔ tibble 3.2.1 ## ✔ lubridate 1.9.3 ✔ tidyr 1.3.1 ## ✔ purrr 1.0.2 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() ## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors d &lt;- tibble(x = rnorm(100)) d$x[1:2] ## [1] 0.3541594 -0.1892458 gt::gt(head(d)) x 0.3541594 -0.1892458 -0.1686892 -1.8129851 -0.5777714 1.3835001 
+ p &lt;- d %&gt;% ggplot(aes(x)) &#43; geom_density() print(p)">
+
+<meta property="og:url" content="//localhost:4321/writings/2024-11-13-test-writing/">
+  <meta property="og:site_name" content="SfD">
+  <meta property="og:title" content="test writing">
+  <meta property="og:description" content="H1 Link to heading here’s a test page. let’s try an image:
+el that previewed!
+a list:
+a b c Some code? Link to heading library(tidyverse) ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ── ## ✔ dplyr 1.1.4 ✔ readr 2.1.5 ## ✔ forcats 1.0.0 ✔ stringr 1.5.1 ## ✔ ggplot2 3.5.1 ✔ tibble 3.2.1 ## ✔ lubridate 1.9.3 ✔ tidyr 1.3.1 ## ✔ purrr 1.0.2 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() ## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors d &lt;- tibble(x = rnorm(100)) d$x[1:2] ## [1] 0.3541594 -0.1892458 gt::gt(head(d)) x 0.3541594 -0.1892458 -0.1686892 -1.8129851 -0.5777714 1.3835001 
+ p &lt;- d %&gt;% ggplot(aes(x)) &#43; geom_density() print(p)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="writings">
+    <meta property="article:published_time" content="2024-11-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-13T00:00:00+00:00">
+    <meta property="og:image" content="//localhost:4321/writings/2024-11-13-test-writing/lumi-feature.jpg">
+
+
+
+
+<link rel="canonical" href="//localhost:4321/writings/2024-11-13-test-writing/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="//localhost:4321/">
+      SfD
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/writings/">Writings</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/analyses/">Analyses</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/artworks/">Artworks</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/photographs/">Photographs</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="//localhost:4321/writings/2024-11-13-test-writing/">
+          test writing
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="h1">
+  H1
+  <a class="heading-link" href="#h1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>here’s a test page. let’s try an image:</p>
+<figure>
+<img src="ellie.jpg" alt="el" />
+<figcaption aria-hidden="true">el</figcaption>
+</figure>
+<p>that previewed!</p>
+<p>a list:</p>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul>
+<h2 id="some-code">
+  Some code?
+  <a class="heading-link" href="#some-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">tibble</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">100</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span><span class="o">$</span><span class="n">x[1</span><span class="o">:</span><span class="m">2</span><span class="n">]</span>
+</span></span></code></pre></div><pre><code>## [1]  0.3541594 -0.1892458
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">gt</span><span class="o">::</span><span class="nf">gt</span><span class="p">(</span><span class="nf">head</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</span></span></code></pre></div><div id="zaavxzyams" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zaavxzyams table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+&#10;#zaavxzyams thead, #zaavxzyams tbody, #zaavxzyams tfoot, #zaavxzyams tr, #zaavxzyams td, #zaavxzyams th {
+  border-style: none;
+}
+&#10;#zaavxzyams p {
+  margin: 0;
+  padding: 0;
+}
+&#10;#zaavxzyams .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+&#10;#zaavxzyams .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+&#10;#zaavxzyams .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+&#10;#zaavxzyams .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+&#10;#zaavxzyams .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+&#10;#zaavxzyams .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+&#10;#zaavxzyams .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+&#10;#zaavxzyams .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+&#10;#zaavxzyams .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+&#10;#zaavxzyams .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+&#10;#zaavxzyams .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+&#10;#zaavxzyams .gt_from_md > :first-child {
+  margin-top: 0;
+}
+&#10;#zaavxzyams .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+&#10;#zaavxzyams .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+&#10;#zaavxzyams .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+&#10;#zaavxzyams .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+&#10;#zaavxzyams .gt_row_group_first td {
+  border-top-width: 2px;
+}
+&#10;#zaavxzyams .gt_row_group_first th {
+  border-top-width: 2px;
+}
+&#10;#zaavxzyams .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+&#10;#zaavxzyams .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+&#10;#zaavxzyams .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+&#10;#zaavxzyams .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+&#10;#zaavxzyams .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+&#10;#zaavxzyams .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+&#10;#zaavxzyams .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+&#10;#zaavxzyams .gt_left {
+  text-align: left;
+}
+&#10;#zaavxzyams .gt_center {
+  text-align: center;
+}
+&#10;#zaavxzyams .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+&#10;#zaavxzyams .gt_font_normal {
+  font-weight: normal;
+}
+&#10;#zaavxzyams .gt_font_bold {
+  font-weight: bold;
+}
+&#10;#zaavxzyams .gt_font_italic {
+  font-style: italic;
+}
+&#10;#zaavxzyams .gt_super {
+  font-size: 65%;
+}
+&#10;#zaavxzyams .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+&#10;#zaavxzyams .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+&#10;#zaavxzyams .gt_indent_1 {
+  text-indent: 5px;
+}
+&#10;#zaavxzyams .gt_indent_2 {
+  text-indent: 10px;
+}
+&#10;#zaavxzyams .gt_indent_3 {
+  text-indent: 15px;
+}
+&#10;#zaavxzyams .gt_indent_4 {
+  text-indent: 20px;
+}
+&#10;#zaavxzyams .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="x">x</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="x" class="gt_row gt_right">0.3541594</td></tr>
+    <tr><td headers="x" class="gt_row gt_right">-0.1892458</td></tr>
+    <tr><td headers="x" class="gt_row gt_right">-0.1686892</td></tr>
+    <tr><td headers="x" class="gt_row gt_right">-1.8129851</td></tr>
+    <tr><td headers="x" class="gt_row gt_right">-0.5777714</td></tr>
+    <tr><td headers="x" class="gt_row gt_right">1.3835001</td></tr>
+  </tbody>
+  &#10;  
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">p</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">d</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">	<span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">+</span> 
+</span></span><span class="line"><span class="cl">	<span class="nf">geom_density</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span></code></pre></div><img src="/writings/2024-11-13-test-writing/index_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Michael Levy 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

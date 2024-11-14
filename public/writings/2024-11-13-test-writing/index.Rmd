@@ -1,0 +1,37 @@
+---
+title: test writing
+author: Package Build
+date: '2024-11-13'
+slug: [test-writing]
+categories: []
+tags: []
+---
+
+# H1
+
+here's a test page. let's try an image:
+
+![el](ellie.jpg)
+
+that previewed!
+
+a list:
+
+- a
+- b
+- c
+
+## Some code?
+
+```{r}
+library(tidyverse)
+d <- tibble(x = rnorm(100))
+d$x[1:2]
+gt::gt(head(d))
+p <- 
+	d %>% 
+	ggplot(aes(x)) + 
+	geom_density()
+print(p)
+```
+
