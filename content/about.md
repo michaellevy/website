@@ -1,28 +1,23 @@
 ---
 aliases:
-- about-us
-- about-hugo
-- contact
-author: Hugo Authors
-date: "2019-02-28"
-description: Hugo, the world's fastest framework for building websites
+- contac
+date: "2024-11-14"
+description: About me with contact info.
 title: About
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hi, I'm Michael! 
 
-Hugo makes use of a variety of open source projects including:
+Truth and beauty are core pursuits for me. I made this website to share some of both. 
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+<p>I'm genuinely tickled that you're here. Please look around, and if you have any questions or feedback (it's a gift!), I'd love if you got in touch. You can reach me <span id="email-link">here</span>.</p>
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+<script>
+  const user = "michaelandrewlevy";
+  const domain = "gmail.com";
+  document.getElementById("email-link").innerHTML = `<a href="mailto:${user}@${domain}">here</a>`;
+</script>
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+<img src="/images/ellie-beach-headshot.jpg" 
+     alt="Photo with me and my baby daughter on the beach" 
+     style="width: 60%; max-width: 100%; height: auto; float: left; margin-right: 20px; border-radius: 50%;">

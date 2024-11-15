@@ -1,5 +1,5 @@
 baseURL: /
-title: SfD
+title: Michael Levy
 theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
@@ -27,22 +27,25 @@ menu:
     - name: Photographs
       url: photographs/
       weight: 4
+    - name: About Me
+      url: about/
+      weight: 5
 params:
   author: Michael Levy
   avatarURL: images/avatar.jpg
   colorScheme: auto
-  commit: https://github.com/luizdepra/hugo-coder/tree/
+  commit: https://github.com/michaellevy/website
   customCSS: []
   customJS: []
   customRemoteJS: []
   customSCSS: []
   dateFormat: January 2, 2006
-  description: John Doe's personal website
+  description: Michael Levy's personal website
   hideColorSchemeToggle: no
   info:
-    - Data Science
-    - Computational Art
-    - Photography
+    - "[Data Science](analyses/)"
+    - "[Computational Art](artworks/)"
+    - "[Photography](photographs/)"
   keywords: blog,developer,personal
   maxSeeAlsoItems: 5
   rtl: no
@@ -64,6 +67,10 @@ params:
     #   name: Twitter
     #   url: https://twitter.com/johndoe/
     #   weight: 4
+  faviconSVG: "/favicon/favicon.svg"
+  favicon_32: "/favicon/favicon-32x32.png"
+  favicon_16: "/favicon/favicon-16x16.png"
+  touchIcon: "/favicon/apple-touch-icon.png"
 taxonomies:
   author: authors
   category: categories

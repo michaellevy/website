@@ -23,7 +23,7 @@ a list:
 
 ## Some code?
 
-```{r}
+```{r, echo = FALSE}
 library(tidyverse)
 d <- tibble(x = rnorm(100))
 d$x[1:2]
